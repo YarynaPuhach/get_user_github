@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Get User GitHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DEMO](https://get-user-github.vercel.app/)
 
-## Available Scripts
+This is a simple React application that interacts with the GitHub API to search for users and display their repositories. The app allows you to search for up to 5 users with a similar username and, upon clicking on a user, view their repositories.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **User Search:** Search for GitHub users by entering a username. The app will display a list of up to 5 users with similar usernames.
+- **View Repositories:** Click on a user to expand the view and see all their public repositories.
+- **Responsive Design:** The application is responsive and works well on both desktop and mobile devices.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get this project up and running locally, follow these steps:
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/YarynaPuhach/get_user_github.git
+   cd get_user_github
+    ```
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have Node.js and npm installed. Then run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
+3. **Run the application:**
 
-### `npm run eject`
+```bash
+npm start
+```
+Open the app in your browser:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Navigate to http://localhost:3000 in your web browser to view the app.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+Enter a GitHub username or part of a username in the search input.
+Click the "Search" button to find users with similar usernames.
+Click on a user's name to expand and view their repositories.
+The repositories will be displayed with their name and description, along with the number of stars they have received.
+## Screenshots
+Here are some screenshots of the application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Initial Search
+![image](https://github.com/user-attachments/assets/c2bd0f0d-f760-44f4-a357-d5e122433b93)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Users List
+![image](https://github.com/user-attachments/assets/e57ae54e-089b-4278-9190-8d92298bd0b0)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### User Repositories
+![image](https://github.com/user-attachments/assets/38ee8c1b-9d02-421d-b2f1-0f6cc8db71fc)
+
+
+## Technologies Used
+- React: A JavaScript library for building user interfaces.
+- TypeScript: Superset of JavaScript that adds static types.
+- GitHub API: Used to fetch user and repository data.
+- CSS: Custom styles to match the design provided.
+## Contributing
+If you'd like to contribute to this project, you can follow these steps:
+
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes.
+- Commit your changes (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature-branch).
+- Open a Pull Request.
