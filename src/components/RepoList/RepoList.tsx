@@ -1,5 +1,6 @@
 import React from 'react';
 import './RepoList.css';
+import { SimpleGitHubRepo } from '../../types';
 
 interface RepoListProps {
   repos: SimpleGitHubRepo[];

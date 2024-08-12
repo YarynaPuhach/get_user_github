@@ -1,5 +1,5 @@
 
-interface SimpleGitHubUser {
+export interface SimpleGitHubUser {
   id: number;
   login: string;
   avatar_url: string;
@@ -9,7 +9,7 @@ interface SimpleGitHubUser {
   following_url: string;
   repos_url: string;
 }
-interface SimpleGitHubRepo {
+export interface SimpleGitHubRepo {
   id: number;
   name: string;
   full_name: string;

@@ -4,6 +4,7 @@ import UserList from './components/UserList/UserList';
 import { searchUsers, getUserRepos } from './api';
 import './App.css'
 import Loader from './components/Loader/Loader';
+import { SimpleGitHubUser, SimpleGitHubRepo } from './types';
 
 const App: React.FC = () => {
   const [users, setUsers] = useState<SimpleGitHubUser[]>([]);

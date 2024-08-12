@@ -1,6 +1,7 @@
 import React from 'react';
 import RepoList from '../RepoList/RepoList';
 import './UserList.css';
+import { SimpleGitHubUser, SimpleGitHubRepo } from '../../types';
 
 interface UserListProps {
   users: SimpleGitHubUser[];
