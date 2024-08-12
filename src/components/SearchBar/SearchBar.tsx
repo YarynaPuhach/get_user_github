@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 
 interface SearchBarProps {
+  showMessage: boolean;
   onSearch: (username: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ showMessage, onSearch }) => {
   const [username, setUsername] = useState('');
-  const [loading, setLoading] = useState(true);
   const handleSearch = () => {
     onSearch(username);
-    setLoading(false)
   };
 
   return (
@@ -23,7 +22,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         className='searchbar_input'
       />
       <button className="searchbar_button" onClick={handleSearch}>Search</button>
-      {!loading && <p>Showing users for: "{username}"</p>}
+      {showMessage && <div className='search_info'>Showing users for: "{username}"</div>}
     </div>
   );
 };

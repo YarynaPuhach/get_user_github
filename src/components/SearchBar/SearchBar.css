@@ -33,6 +33,12 @@
   background-color: #2a80b3;
   border: none;
 }
+.search_info {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 15px;
+}
 
 @media only screen and (min-width: 768px) {
   .searchbar_container, .users__container{
