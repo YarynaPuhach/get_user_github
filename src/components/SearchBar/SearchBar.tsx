@@ -6,7 +6,7 @@ interface SearchBarProps {
   onSearch: (username: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ showMessage, onSearch }) => {
+const SearchBar: React.FC<SearchBarProps> = React.memo(({ showMessage, onSearch }) => {
   const [username, setUsername] = useState('');
   const handleSearch = () => {
     onSearch(username);
@@ -25,6 +25,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ showMessage, onSearch }) => {
       {showMessage && <div className='search_info'>Showing users for: "{username}"</div>}
     </div>
   );
-};
+});
 
 export default SearchBar;
