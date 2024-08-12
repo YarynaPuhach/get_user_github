@@ -2,7 +2,7 @@ import React from 'react';
 import './RepoList.css';
 
 interface RepoListProps {
-  repos: any[];
+  repos: SimpleGitHubRepo[];
 }
 
 const RepoList: React.FC<RepoListProps> = React.memo(({ repos }) => {

@@ -3,8 +3,8 @@ import RepoList from '../RepoList/RepoList';
 import './UserList.css';
 
 interface UserListProps {
-  users: any[];
-  repos: { [key: string]: any[] };
+  users: SimpleGitHubUser[];
+  repos: { [key: string]: SimpleGitHubRepo[] };
   selectedUser: string | null;
   onUserClick: (username: string) => void;
 }
